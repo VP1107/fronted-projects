@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design Company Uk:Custom Software Developement by Renav Technologies</title>
+    <meta name="description"
+        content="Renav Technologies - Web Design Company UK specializing in custom software development, WordPress, and e-commerce solutions.">
+    <title>Web Design Company UK: Custom Software Development by Renav Technologies</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="assets/image copy.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,447 +16,521 @@
         rel="stylesheet">
 </head>
 
-<div class="navbar">
-    <header>
-        <nav aria-label="Main Navigation">
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <header>
             <ul class="nav-links">
-                <li><a href="#" class="left-links"><img src="assets/image.png" alt="logo" id="logo"></a></li>
+                <li><a href="#hero" class="left-links" aria-label="Home"><img src="assets/image.png"
+                            alt="Renav Technologies Logo" id="logo" width="35" height="35"></a></li>
                 <li>
                     <ul class="center-links">
-                        <li><a href="#" class="active">Services</a></li>
-                        <li><a href="#" class="active">Products</a></li>
-                        <li><a href="#" class="active">Case Studies</a></li>
-                        <li><a href="#" class="active">About</a></li>
-                        <li><a href="#" class="active">Contact</a></li>
+                        <li><a href="#services" class="active">Services</a></li>
+                        <li><a href="#products" class="active">Products</a></li>
+                        <li><a href="#case-studies" class="active">Case Studies</a></li>
+                        <li><a href="#about" class="active">About</a></li>
+                        <li><a href="#contact" class="active">Contact</a></li>
                     </ul>
                 </li>
                 <li><a href="https://api.whatsapp.com/send/?phone=919727279770&text&type=phone_number&app_absent=0"
-                        target="_self" class="right-links"><img src="assets/whatsapp.png" alt="whatsapp"> Let's Chat</a>
+                        target="_blank" rel="noopener noreferrer" class="right-links"><img src="assets/whatsapp.png"
+                            alt="WhatsApp icon" width="25" height="25"> Let's Chat</a>
+                </li>
+                <!-- Hamburger Menu -->
+                <li class="hamburger" tabindex="0" role="button" aria-label="Toggle navigation menu"
+                    aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </li>
             </ul>
-        </nav>
-    </header>
-</div>
+        </header>
+    </nav>
 
-<body>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://api.whatsapp.com/send/?phone=919727279770&text&type=phone_number&app_absent=0" target="_blank"
+            rel="noopener noreferrer">Let's Chat</a>
+    </nav>
 
     <!-- Consent Preference -->
     <div class="consent_preference">
-        <a href="#"><img src="assets/image copy 18.png" alt="consent_preference"></a>
+        <button type="button" aria-label="Cookie consent preferences">
+            <img src="assets/image copy 18.png" alt="Cookie settings icon" width="40" height="40">
+        </button>
     </div>
-    <!-- Page 1 -->
-    <div class="page1">
-        <div class="content">
-            <div class="home-content">
-                <div class="home-content1">
-                    <span id="span1">We Craft your</span>
-                    <br>
-                    <span id="span2">web presence</span>
-                </div>
-                <div class="home-content2">
-                    <span>Crafting _</span>
-                    <br>
-                    <div class="div_animation">
-                        <div id="card-1">
-                            <span class="animation">pixel perfect website</span>
+
+    <main>
+        <!-- Page 1 - Hero Section -->
+        <section class="page1" id="hero">
+            <div class="content">
+                <div class="home-content">
+                    <div class="home-content1">
+                        <h1>
+                            <span id="span1">We Craft your</span>
+                            <span id="span2">web presence</span>
+                        </h1>
+                    </div>
+                    <div class="home-content2">
+                        <span>Crafting _</span>
+                        <br><br>
+                        <p style="font-size: clamp(18px, 2vw, 25px);">Get your's crafted!</p>
+                        <div class="div_animation" aria-live="polite">
+                            <div class="animation-card active" id="card-1">
+                                <span class="animation">pixel perfect websites</span>
+                            </div>
+                            <div class="animation-card" id="card-2">
+                                <span class="animation">bespoke software solutions</span>
+                            </div>
+                            <div class="animation-card" id="card-3">
+                                <span class="animation">UVDialer & Messenger</span>
+                            </div>
+                            <div class="animation-card" id="card-4">
+                                <span class="animation">e-commerce stores</span>
+                            </div>
                         </div>
-                        <!-- <div id="card-2">
-                        <span class="animation">bespoke software solutions</span>
                     </div>
-                    <div id="card-3">
-                        <span class="animation">UVDialer & Messenger</span>
-                    </div>
-                    <div id="card-4">
-                        <span class="animation">e-commerce stores</span>
-                    </div> -->
-                    </div>
-                    <br><br>
-                    <p style="font-size: 25px;">Get your's crafted!</p>
-                </div>
-                <div class="home-content3">
-                    <a href="https://api.whatsapp.com/send/?phone=919727279770&text&type=phone_number&app_absent=0"
-                        target="_self"><button id="whatsapp"><img src="assets/whatsapp.png" alt="whatsapp">Whatsapp
-                            Us</button></a>
-                    <button id="email">
-                        <!-- <img src="assets/email.png" alt="email"> -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="">
-                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-                            <rect x="2" y="4" width="20" height="16" rx="2" />
-                        </svg>
-                        Email Us
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <br><br><br>
-    <!-- Page 2 -->
-    <div class="page2">
-        <div class="heading">
-            <span>Who we are</span>
-        </div>
-
-        <div class="content_box">
-            <div class="left_box">
-                <div class="left_box_content1">
-                    We are a team of <b>web</b> professionals passionate about crafting <b>innovative</b> <b>digital</b>
-                    <b>solutions</b> that drive business success.
-                </div>
-                <div class="left_box_content2">
-                    <p>With a 70% repeat customer rate, our commitment to quality and excellence speaks for itself</p>
-                    <br>
-                    <p>We don't just build websites—we turn digital visions into reality.</p>
-                </div>
-            </div>
-            <div class="right_box">
-                <img src="assets/image copy 2.png" alt="">
-            </div>
-        </div>
-
-        <div class="box_container">
-            <div class="box">
-                <div class="logo_box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="rgb(44,32,209)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-user-icon lucide-user">
-                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-                        <circle cx="12" cy="7" r="4" />
-                    </svg>
-                    <circle cx="12" cy="7" r="4" />
-                    </svg>
-                </div>
-                <div class="box_content">
-                    <span>50+</span>
-                </div>
-                <div class="box_content2">
-                    <span>Satisfied clients across the globe</span>
-                </div>
-            </div>
-            <div class="box">
-                <div class="logo_box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="rgb(44,32,209)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-boxes-icon lucide-boxes">
-                        <path
-                            d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" />
-                        <path d="m7 16.5-4.74-2.85" />
-                        <path d="m7 16.5 5-3" />
-                        <path d="M7 16.5v5.17" />
-                        <path
-                            d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" />
-                        <path d="m17 16.5-5-3" />
-                        <path d="m17 16.5 4.74-2.85" />
-                        <path d="M17 16.5v5.17" />
-                        <path
-                            d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" />
-                        <path d="M12 8 7.26 5.15" />
-                        <path d="m12 8 4.74-2.85" />
-                        <path d="M12 13.5V8" />
-                    </svg>
-                </div>
-                <div class="box_content">
-                    <span>100+</span>
-                </div>
-                <div class="box_content2">
-                    <span>Projects delivered successfully</span>
-                </div>
-            </div>
-            <div class="box">
-                <div class="logo_box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="rgb(44,32,209)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-flame-icon lucide-flame">
-                        <path
-                            d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4" />
-                    </svg>
-                </div>
-                <div class="box_content">
-                    <span>10</span>
-                </div>
-                <div class="box_content2">
-                    <span>Years of industry experience</span>
-                </div>
-            </div>
-            <div class="box">
-                <div class="logo_box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="rgb(44,32,209)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-users-icon lucide-users">
-                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                        <path d="M16 3.128a4 4 0 0 1 0 7.744" />
-                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                        <circle cx="9" cy="7" r="4" />
-                    </svg>
-                </div>
-                <div class="box_content">
-                    <span>10+</span>
-                </div>
-                <div class="box_content2">
-                    <span>Creative web professionals</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Marquee -->
-    <div class="marquee1">
-        <marquee behavior="" direction="left">
-            <div class="marquee_box">
-                <div><img src="assets/image copy 3.png" alt=""></div>
-                <div><img src="assets/image copy 4.png" alt=""></div>
-                <div><img src="assets/image copy 5.png" alt=""></div>
-                <div><img src="assets/image copy 6.png" alt=""></div>
-                <div><img src="assets/image copy 7.png" alt=""></div>
-            </div>
-        </marquee>
-    </div>
-    <!-- Page 3 -->
-    <div class="page3">
-        <div class="heading">
-            <span>Who we are</span>
-        </div>
-        <div class="content_box">
-            <div class="left_box">
-                <div class="left_box_content1">
-                    We craft <b>high-performance websites</b>,<b> powerful web applications</b>, and <b>bespoke digital
-                        solutions</b> to help businesses grow.
-                </div>
-                <div class="left_box_content2">
-                    <p>Whether you need a stunning website, an e-commerce platform, or seamless API integrations, we've
-                        got you covered.</p>
-                </div>
-            </div>
-            <div class="right_box">
-                <img src="assets/image copy 8.png" alt="">
-            </div>
-        </div>
-    </div>
-    <!-- Marquee -->
-    <div class="marquee2">
-    </div>
-    <!-- Page 4 -->
-    <div class="page4">
-        <div class="heading">
-            <span>Our Products</span>
-        </div>
-        <div class="content1">
-            <div class="content_box">
-                <div class="left_box">
-                    <img src="assets/image copy 9.png" alt="">
-                </div>
-                <div class="right_box">
-                    <div class="right_box_content1">
-                        Elevate your communication and automation with Renav's innovative products. <b>UVDialer</b>
-                        streamlines outbound calling with advanced dialer technology, while <b>TheMessenger</b> enhances
-                        customer engagement through seamless WhatsApp Business API solutions. Whether you need efficient
-                        calling or smart messaging, our tools help you connect, automate, and grow effortlessly.
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Page 5 -->
-    <div class="page5">
-        <div class="content1">
-            <div class="content_box">
-                <div class="left_box">
-                    <img src="assets/image copy 10.png" alt="">
-                </div>
-                <div class="right_box">
-                    <div class="right_box_content1">
-                        <img src="assets/image copy 12.png" alt="">
-                    </div>
-                    <div class="right_box_content2">
-                        <p>Dialer for CRM & Call Center</p>
-                    </div>
-                    <div class="right_box_content3">
-                        <p>Revolutionize your communication processes with UVDialer, an omni-channel dialer built for
-                            modern CRM and call center needs.</p>
-                    </div>
-                    <div class="right_box_content4">
-                        <ul>
-                            <li><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-check-icon lucide-check">
-                                        <path d="M20 6 9 17l-5-5" />
-                                    </svg></span> Plug-and-Play Widget</li>
-                            <li><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-check-icon lucide-check">
-                                        <path d="M20 6 9 17l-5-5" />
-                                    </svg></span> Integration with existing CRM</li>
-                            <li><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-check-icon lucide-check">
-                                        <path d="M20 6 9 17l-5-5" />
-                                    </svg></span> Widget with Single-Sign-On</li>
-                            <li><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-check-icon lucide-check">
-                                        <path d="M20 6 9 17l-5-5" />
-                                    </svg></span> Track real time agent activity</li>
-                            <li><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-check-icon lucide-check">
-                                        <path d="M20 6 9 17l-5-5" />
-                                    </svg></span> Dynamic campaign switching</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Page 6 -->
-    <div class="page6">
-        <div class="content1">
-            <div class="content_box">
-                <div class="left_box">
-                    <div class="left_box_content1">
-                        <img src="assets/themessenger_waba_api_logo.svg" alt="">
-                    </div>
-                    <div class="left_box_content2">
-                        <p>Your Comprehensive WhatsApp Business Solution</p>
-                    </div>
-                    <div class="left_box_content3">
-                        <p>Elevate your customer communication with TheMessenger, a powerful WhatsApp Business API
-                            solution.</p>
-                        <br>
-                        <p>Simplify bulk broadcasting and schedule messages effortlessly. Empower your team with a
-                            shared inbox and streamline workflows using no-code chatbots, dynamic API integrations and
-                            many more features.
-                        </p>
-                    </div>
-                </div>
-                <div class="right_box">
-                    <img src="assets/image copy 13.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Page 7 -->
-    <div class="page7">
-        <div class="heading">
-            <span>Case Studies</span>
-        </div>
-        <div class="image_box">
-            <img src="assets/image copy 14.png" alt="">
-        </div>
-        <br>
-        <div class="content">
-            <div class="content-1">Freeson & Tee</div>
-            <div class="content-2">fandt.com - A Modern, High-Performance WordPress Website</div>
-            <br>
-            <div class="content-3">Read More ></div>
-        </div>
-    </div>
-
-    <!-- Page 8 -->
-    <div class="page8">
-        <div class="box-container">
-            <div class="box">
-                <div class="image_box">
-                    <img src="assets/image copy 15.png" alt="">
-                </div>
-                <div class="content">
-                    <div class="content-1">Elision</div>
-                    <div class="content-2">elisiontec.com – A Scalable & Performance-Driven WordPress Website</div>
-                    <br>
-                    <div class="content-3">Read More ></div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image_box">
-                    <img src="assets/image copy 16.png" alt="">
-                </div>
-                <div class="content">
-                    <div class="content-1">Call Insight</div>
-                    <div class="content-2">callinsight.io – A Scalable & Performance-Driven WordPress Website.</div>
-                    <br>
-                    <div class="content-3">Read More ></div>
-                </div>
-            </div>
-        </div>
-        <br><br><br><br><br>
-        <div class="view-all"><span>View all Case Studies ></span></div>
-    </div>
-
-    <!-- Page 9 -->
-    <div class="page9">
-        <div class="main-box">
-            <div class="center-box">
-                <div class="content-1">
-                    <h2>Your Vision, Our Expertise – Let’s Build It!</h2>
-                </div>
-                <br>
-                <div class="content-2">
-                    <span><a href="https://api.whatsapp.com/send/?phone=919727279770&text&type=phone_number&app_absent=0"
-                            target="_self"><button id="whatsapp"><img src="assets/whatsapp.png" alt="whatsapp">Whatsapp
-                                Us</button></a>
-                        <button id="email">
+                    <div class="home-content3">
+                        <a href="https://api.whatsapp.com/send/?phone=919727279770&text&type=phone_number&app_absent=0"
+                            target="_blank" rel="noopener noreferrer">
+                            <button id="whatsapp" type="button">
+                                <img src="assets/whatsapp.png" alt="WhatsApp icon" width="25" height="25">WhatsApp Us
+                            </button>
+                        </a>
+                        <button id="email" type="button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="">
+                                stroke-linejoin="round" aria-hidden="true">
                                 <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
                                 <rect x="2" y="4" width="20" height="16" rx="2" />
                             </svg>
                             Email Us
-                        </button></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-spacing"></div>
+
+        <!-- Page 2 - Who We Are -->
+        <section class="page2" id="about">
+            <div class="heading">
+                <span>Who we are</span>
+            </div>
+            <div class="content_box">
+                <div class="left_box">
+                    <div class="left_box_content1">
+                        We are a team of <b>web</b> professionals passionate about crafting <b>innovative</b>
+                        <b>digital</b>
+                        <b>solutions</b> that drive business success.
+                    </div>
+                    <div class="left_box_content2">
+                        <p>With a 70% repeat customer rate, our commitment to quality and excellence speaks for itself.
+                        </p>
+                        <p style="margin-top: 20px;">We don't just build websites—we turn digital visions into reality.
+                        </p>
+                    </div>
+                </div>
+                <div class="right_box">
+                    <img src="assets/image copy 2.png" alt="Team collaboration on digital solutions" width="422"
+                        height="700" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Stats Boxes -->
+            <div class="box_container">
+                <article class="box">
+                    <div class="logo_box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="rgb(44,32,209)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                    </div>
+                    <div class="box_content">
+                        <span>50+</span>
+                    </div>
+                    <div class="box_content2">
+                        <span>Satisfied clients across the globe</span>
+                    </div>
+                </article>
+                <article class="box">
+                    <div class="logo_box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="rgb(44,32,209)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path
+                                d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" />
+                            <path d="m7 16.5-4.74-2.85" />
+                            <path d="m7 16.5 5-3" />
+                            <path d="M7 16.5v5.17" />
+                            <path
+                                d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" />
+                            <path d="m17 16.5-5-3" />
+                            <path d="m17 16.5 4.74-2.85" />
+                            <path d="M17 16.5v5.17" />
+                            <path
+                                d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" />
+                            <path d="M12 8 7.26 5.15" />
+                            <path d="m12 8 4.74-2.85" />
+                            <path d="M12 13.5V8" />
+                        </svg>
+                    </div>
+                    <div class="box_content">
+                        <span>100+</span>
+                    </div>
+                    <div class="box_content2">
+                        <span>Projects delivered successfully</span>
+                    </div>
+                </article>
+                <article class="box">
+                    <div class="logo_box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="rgb(44,32,209)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path
+                                d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4" />
+                        </svg>
+                    </div>
+                    <div class="box_content">
+                        <span>10</span>
+                    </div>
+                    <div class="box_content2">
+                        <span>Years of industry experience</span>
+                    </div>
+                </article>
+                <article class="box">
+                    <div class="logo_box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="rgb(44,32,209)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                            <circle cx="9" cy="7" r="4" />
+                        </svg>
+                    </div>
+                    <div class="box_content">
+                        <span>10+</span>
+                    </div>
+                    <div class="box_content2">
+                        <span>Creative web professionals</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Marquee - Tech Logos -->
+        <section class="marquee1" aria-label="Technology partners">
+            <div class="marquee-wrapper">
+                <div class="marquee-content">
+                    <img src="assets/image copy 3.png" alt="Technology partner logo" width="200" height="80"
+                        loading="lazy">
+                    <img src="assets/image copy 4.png" alt="Technology partner logo" width="200" height="80"
+                        loading="lazy">
+                    <img src="assets/image copy 5.png" alt="Technology partner logo" width="200" height="80"
+                        loading="lazy">
+                    <img src="assets/image copy 6.png" alt="Technology partner logo" width="200" height="80"
+                        loading="lazy">
+                    <img src="assets/image copy 7.png" alt="Technology partner logo" width="200" height="80"
+                        loading="lazy">
+                    <!-- Duplicate for seamless loop -->
+                    <img src="assets/image copy 3.png" alt="Technology partner logo" width="200" height="80"
+                        loading="lazy">
+                    <img src="assets/image copy 4.png" alt="Technology partner logo" width="200" height="80"
+                        loading="lazy">
+                    <img src="assets/image copy 5.png" alt="Technology partner logo" width="200" height="80"
+                        loading="lazy">
+                    <img src="assets/image copy 6.png" alt="Technology partner logo" width="200" height="80"
+                        loading="lazy">
+                    <img src="assets/image copy 7.png" alt="Technology partner logo" width="200" height="80"
+                        loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 3 - What We Do -->
+        <section class="page3" id="services">
+            <div class="heading">
+                <span>What we do</span>
+            </div>
+            <div class="content_box">
+                <div class="left_box">
+                    <div class="left_box_content1">
+                        We craft <b>high-performance websites</b>, <b>powerful web applications</b>, and <b>bespoke
+                            digital
+                            solutions</b> to help businesses grow.
+                    </div>
+                    <div class="left_box_content2">
+                        <p>Whether you need a stunning website, an e-commerce platform, or seamless API integrations,
+                            we've
+                            got you covered.</p>
+                    </div>
+                </div>
+                <div class="right_box">
+                    <img src="assets/image copy 8.png" alt="Web development services showcase" width="603" height="403"
+                        loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee 2 - Trust Indicators -->
+        <section class="marquee2" aria-label="Trust indicators">
+            <div class="content">
+                <p>🚀 Trusted by 50+ companies worldwide • 100+ successful projects • 10 years of excellence</p>
+            </div>
+        </section>
+
+        <!-- Page 4 - Our Products -->
+        <section class="page4" id="products">
+            <div class="heading">
+                <span>Our Products</span>
+            </div>
+            <div class="content1">
+                <div class="content_box">
+                    <div class="left_box">
+                        <img src="assets/image copy 9.png" alt="Renav products overview" width="400" height="300"
+                            loading="lazy">
+                    </div>
+                    <div class="right_box">
+                        <div class="right_box_content1">
+                            Elevate your communication and automation with Renav's innovative products. <b>UVDialer</b>
+                            streamlines outbound calling with advanced dialer technology, while <b>TheMessenger</b>
+                            enhances
+                            customer engagement through seamless WhatsApp Business API solutions. Whether you need
+                            efficient
+                            calling or smart messaging, our tools help you connect, automate, and grow effortlessly.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 5 - UVDialer -->
+        <section class="page5">
+            <div class="content1">
+                <div class="content_box">
+                    <div class="left_box">
+                        <img src="assets/image copy 10.png" alt="UVDialer interface preview" width="400" height="300"
+                            loading="lazy">
+                    </div>
+                    <div class="right_box">
+                        <div class="right_box_content1">
+                            <img src="assets/image copy 12.png" alt="UVDialer logo" width="285" height="113"
+                                loading="lazy">
+                        </div>
+                        <div class="right_box_content2">
+                            <h3>Dialer for CRM & Call Center</h3>
+                        </div>
+                        <div class="right_box_content3">
+                            <p>Revolutionize your communication processes with UVDialer, an omni-channel dialer built
+                                for
+                                modern CRM and call center needs.</p>
+                        </div>
+                        <div class="right_box_content4">
+                            <ul>
+                                <li>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M20 6 9 17l-5-5" />
+                                        </svg></span> Plug-and-Play Widget
+                                </li>
+                                <li>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M20 6 9 17l-5-5" />
+                                        </svg></span> Integration with existing CRM
+                                </li>
+                                <li>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M20 6 9 17l-5-5" />
+                                        </svg></span> Widget with Single-Sign-On
+                                </li>
+                                <li>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M20 6 9 17l-5-5" />
+                                        </svg></span> Track real time agent activity
+                                </li>
+                                <li>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M20 6 9 17l-5-5" />
+                                        </svg></span> Dynamic campaign switching
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 6 - TheMessenger -->
+        <section class="page6">
+            <div class="content1">
+                <div class="content_box">
+                    <div class="left_box">
+                        <div class="left_box_content1">
+                            <img src="assets/themessenger_waba_api_logo.svg" alt="TheMessenger logo" width="200"
+                                height="80" loading="lazy">
+                        </div>
+                        <div class="left_box_content2">
+                            <h3>Your Comprehensive WhatsApp Business Solution</h3>
+                        </div>
+                        <div class="left_box_content3">
+                            <p>Elevate your customer communication with TheMessenger, a powerful WhatsApp Business API
+                                solution.</p>
+                            <p style="margin-top: 20px;">Simplify bulk broadcasting and schedule messages effortlessly.
+                                Empower your team with a
+                                shared inbox and streamline workflows using no-code chatbots, dynamic API integrations
+                                and
+                                many more features.</p>
+                        </div>
+                    </div>
+                    <div class="right_box">
+                        <img src="assets/image copy 13.png" alt="TheMessenger app interface" width="324" height="400"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 7 - Case Studies -->
+        <section class="page7" id="case-studies">
+            <div class="heading">
+                <span>Case Studies</span>
+            </div>
+            <div class="image_box">
+                <img src="assets/image copy 14.png" alt="Freeson and Tee website case study" width="1240" height="600"
+                    loading="lazy">
+            </div>
+            <div class="content">
+                <h3 class="content-1">Freeson & Tee</h3>
+                <p class="content-2">fandt.com - A Modern, High-Performance WordPress Website</p>
+                <a href="#" class="content-3">Read More ></a>
+            </div>
+        </section>
+
+        <!-- Page 8 - More Case Studies -->
+        <section class="page8">
+            <div class="box-container">
+                <article class="box">
+                    <div class="image_box">
+                        <img src="assets/image copy 15.png" alt="Elision website case study" width="604" height="400"
+                            loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3 class="content-1">Elision</h3>
+                        <p class="content-2">elisiontec.com – A Scalable & Performance-Driven WordPress Website</p>
+                        <a href="#" class="content-3">Read More ></a>
+                    </div>
+                </article>
+                <article class="box">
+                    <div class="image_box">
+                        <img src="assets/image copy 16.png" alt="Call Insight website case study" width="604"
+                            height="400" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3 class="content-1">Call Insight</h3>
+                        <p class="content-2">callinsight.io – A Scalable & Performance-Driven WordPress Website</p>
+                        <a href="#" class="content-3">Read More ></a>
+                    </div>
+                </article>
+            </div>
+            <div class="view-all">
+                <a href="#case-studies"><span>View all Case Studies ></span></a>
+            </div>
+        </section>
+
+        <!-- Page 9 - CTA Section -->
+        <section class="page9" id="contact">
+            <div class="main-box">
+                <div class="center-box">
+                    <div class="content-1">
+                        <h2>Your Vision, Our Expertise – Let's Build It!</h2>
+                    </div>
+                    <div class="content-2">
+                        <a href="https://api.whatsapp.com/send/?phone=919727279770&text&type=phone_number&app_absent=0"
+                            target="_blank" rel="noopener noreferrer">
+                            <button id="whatsapp" type="button">
+                                <img src="assets/whatsapp.png" alt="WhatsApp icon" width="25" height="25">WhatsApp Us
+                            </button>
+                        </a>
+                        <button id="email" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                            </svg>
+                            Email Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="content">
+            <div class="box1">
+                <div class="box1_content">
+                    <img src="assets/image copy 17.png" alt="Renav Technologies logo" width="200" height="150"
+                        loading="lazy">
+                </div>
+                <div class="box1_content">
+                    <p>We blend creativity and technology to build seamless websites and custom software solutions that
+                        drive results.</p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="box2_content">
+                    <p>Products</p>
+                    <a href="#products">UVDialer</a>
+                    <a href="#products">TheMessenger</a>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="box3_content">
+                    <p>Services</p>
+                    <a href="#services">WordPress Development</a>
+                    <a href="#services">Web Applications</a>
+                    <a href="#services">Webflow Development</a>
+                    <a href="#services">Shopify Development</a>
+                    <a href="#services">Statamic Development</a>
+                </div>
+            </div>
+            <div class="box4">
+                <div class="box4_content">
+                    <p>Quick Links</p>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#case-studies">Case Studies</a>
+                    <a href="#contact">Privacy Policy</a>
                 </div>
             </div>
         </div>
+        <div class="copyright">
+            <p>&copy; Renav Ltd. Registered in England & Wales. Company Registration Number: 08758164 <br>
+                Registered Office: 449 Honeypot Lane, Stanmore, England, HA7 1JJ</p>
+        </div>
+    </footer>
 
-    </div>
-
+    <script src="js/main.js"></script>
 </body>
-<!-- Footer -->
-<footer>
-    <div class="content">
-        <div class="box1">
-            <div class="box1_content">
-                <img src="assets/image copy 17.png" alt="">
-            </div>
-            <div class="box1_content">
-                <p>We blend creativity and technology to build seamless websites and custom software solutions that
-                    drive results.</p>
-            </div>
-        </div>
-        <div class="box2">
-            <div class="box2_content">
-                <p>Products</p>
-                <a href="">UVDialer</a>
-                <a href="">TheMessenger</a>
-            </div>
-        </div>
-        <div class="box3">
-            <div class="box3_content">
-                <p>Services</p>
-                <a href="">WordPress Development</a>
-                <a href="">Web Applications</a>
-                <a href="">Webflow Development</a>
-                <a href="">Shopify Development</a>
-                <a href="">Statamic Development</a>
-            </div>
-        </div>
-        <div class="box4">
-            <div class="box4_content">
-                <p>Quick Links</p>
-                <a href="">About</a>
-                <a href="">Contact</a>
-                <a href="">Case Studies</a>
-                <a href="">Privacy Policy</a>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>&copy; Renav Ltd. Registered in England & Wales. Company Registration Number: 08758164 <br>
-            Registered Office: 449 Honeypot Lane, Stanmore, England, HA7 1JJ</p>
-    </div>
-</footer>
 
 </html>

@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>themessenger - Renav Technologies</title>
+    <meta name="description"
+        content="TheMessenger by Renav Technologies - Sell more, support better, and market smarter with WhatsApp Business API integration.">
+    <title>TheMessenger - Renav Technologies</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="assets/image copy 4.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,542 +15,617 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
 </head>
-<div class="all-Pages">
-    <div class="all-Pages-content">
-        <div class="navbar">
-            <header>
-                <nav aria-label="Main Navigation">
+
+<body>
+    <div class="all-Pages">
+        <div class="all-Pages-content">
+            <!-- Navbar -->
+            <nav class="navbar" aria-label="Main Navigation">
+                <header>
                     <ul class="nav-links">
-                        <li><a href="#" class="left-links"><img src="assets/image.png" alt="logo" id="logo"></a></li>
+                        <li><a href="#hero" class="left-links" aria-label="Home"><img src="assets/image.png"
+                                    alt="Renav Technologies Logo" id="logo" width="35" height="35"></a></li>
                         <li>
                             <ul class="center-links">
-                                <li><a href="#" class="active">Services</a></li>
-                                <li><a href="#" class="active">Products</a></li>
-                                <li><a href="#" class="active">Case Studies</a></li>
-                                <li><a href="#" class="active">About</a></li>
-                                <li><a href="#" class="active">Contact</a></li>
+                                <li><a href="#services" class="active">Services</a></li>
+                                <li><a href="#products" class="active">Products</a></li>
+                                <li><a href="#clients" class="active">Case Studies</a></li>
+                                <li><a href="#about" class="active">About</a></li>
+                                <li><a href="#contact" class="active">Contact</a></li>
                             </ul>
                         </li>
                         <li><a href="https://api.whatsapp.com/send/?phone=919727279770&text&type=phone_number&app_absent=0"
-                                target="_self" class="right-links"><img src="assets/whatsapp.png" alt="whatsapp"> Let's
+                                target="_blank" rel="noopener noreferrer" class="right-links"><img
+                                    src="assets/whatsapp.png" alt="WhatsApp icon" width="25" height="25"> Let's
                                 Chat</a>
                         </li>
+                        <!-- Hamburger Menu -->
+                        <li class="hamburger" tabindex="0" role="button" aria-label="Toggle navigation menu"
+                            aria-expanded="false">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </li>
                     </ul>
-                </nav>
-            </header>
-        </div>
+                </header>
+            </nav>
 
-        <body>
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav" aria-label="Mobile Navigation">
+                <a href="#services">Services</a>
+                <a href="#products">Products</a>
+                <a href="#clients">Case Studies</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="https://api.whatsapp.com/send/?phone=919727279770&text&type=phone_number&app_absent=0"
+                    target="_blank" rel="noopener noreferrer">Let's Chat</a>
+            </nav>
 
             <!-- Consent Preference -->
             <div class="consent_preference">
-                <a href="#"><img src="assets/image copy 18.png" alt="consent_preference"></a>
+                <button type="button" aria-label="Cookie consent preferences">
+                    <img src="assets/image copy 18.png" alt="Cookie settings icon" width="40" height="40">
+                </button>
             </div>
-            <br>
-            <!-- Page 1 -->
-            <div class="Page1">
-                <div class="content1">
-                    <div class="Page1-text"><span>Sell More,</span></div>
-                    <div class="Page1-text"><span>Support Better,</span></div>
-                    <div class="Page1-text"><span>and</span></div>
-                    <div class="Page1-text"><span>Market Smarter - All with</span></div>
-                </div>
-                <div class="content2">
-                    <div><img src="assets/image copy 2.png" alt=""></div>
-                </div>
-                <div class="content3">
-                    <div><button class="whatsapp"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                fill="currentColor" viewBox="0 0 24 24">
-                                <!--Boxicons v3.0.6 https://boxicons.com | License  https://docs.boxicons.com/free-->
+
+            <main>
+                <!-- Page 1 - Hero Section -->
+                <section class="Page1" id="hero">
+                    <div class="content1">
+                        <span class="Page1-text">Sell More,</span>
+                        <span class="Page1-text">Support Better,</span>
+                        <span class="Page1-text">and</span>
+                        <span class="Page1-text">Market Smarter - All with</span>
+                    </div>
+                    <div class="content2">
+                        <img src="assets/image copy 2.png" alt="TheMessenger platform logo" width="400" height="100"
+                            loading="eager">
+                    </div>
+                    <div class="content3">
+                        <button class="whatsapp" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24" aria-hidden="true">
                                 <path fill-rule="evenodd"
                                     d="M18.403 5.633A8.92 8.92 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a9 9 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.93 8.93 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.45 7.45 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.45 7.45 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.41 7.41 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73s-.354-.112-.504.112-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393s.149-.224.224-.374.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a10 10 0 0 0-.429-.008.83.83 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321 1.582 2.415 3.832 3.387c.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066s.187-.973.131-1.067-.207-.151-.43-.263"
                                     clip-rule="evenodd"></path>
-                            </svg>Using Official Whatsapp Business API</button></div>
-
-                    <div><button class="meta"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                fill="currentColor" viewBox="0 0 24 24">
-                                <!--Boxicons v3.0.6 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                            </svg>
+                            Using Official WhatsApp Business API
+                        </button>
+                        <button class="meta" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24" aria-hidden="true">
                                 <path
                                     d="M20.26 7.8a4.82 4.82 0 0 0-3.93-2.44 3.9 3.9 0 0 0-2.54 1.09 10.6 10.6 0 0 0-1.52 1.71 11 11 0 0 0-1.63-1.72 4.4 4.4 0 0 0-2.88-1.08A5 5 0 0 0 3.7 8 11.5 11.5 0 0 0 2 14a7 7 0 0 0 .18 1.64A4.4 4.4 0 0 0 2.71 17a3.23 3.23 0 0 0 3 1.6c1.25 0 2.19-.56 3.3-2a26.4 26.4 0 0 0 2.21-3.6l.63-1.12c.06-.09.11-.18.16-.27l.15.25 1.79 3A14.8 14.8 0 0 0 16 17.63a3.38 3.38 0 0 0 2.55 1 3 3 0 0 0 2.54-1.23 2 2 0 0 0 .18-.28 4 4 0 0 0 .31-.63l.12-.35A6.5 6.5 0 0 0 22 15a9 9 0 0 0 0-1 11.15 11.15 0 0 0-1.74-6.2m-10.12 3.56c-.64 1-1.57 2.51-2.37 3.61-1 1.37-1.51 1.51-2.07 1.51a1.29 1.29 0 0 1-1.15-.66 3.3 3.3 0 0 1-.39-1.7A9.74 9.74 0 0 1 5.54 9a2.8 2.8 0 0 1 2.19-1.47A3 3 0 0 1 10 8.74a14 14 0 0 1 1 1.31zm8.42 5.12c-.48 0-.85-.19-1.38-.83A35 35 0 0 1 14.82 12l-.52-.86c-.36-.61-.71-1.16-1-1.65a3 3 0 0 1 .17-.27c.94-1.39 1.77-2.17 2.8-2.17a3.12 3.12 0 0 1 2.49 1.66 10.17 10.17 0 0 1 1.37 5.34c-.04 1.31-.34 2.43-1.57 2.43">
                                 </path>
-                            </svg>Meta Tech Provider</button></div>
-                </div>
-                <div class="content4">
-                    <img src="assets/image copy 3.png" alt="">
-                </div>
+                            </svg>
+                            Meta Tech Provider
+                        </button>
+                    </div>
+                    <div class="content4">
+                        <img src="assets/image copy 3.png"
+                            alt="TheMessenger dashboard interface showing WhatsApp business messaging features"
+                            width="1080" height="720" loading="eager">
+                    </div>
+                </section>
 
-            </div>
-            <br><br><br>
-            <!-- Page 2 -->
-            <div class="Page2">
-                <div class="content1">
-                    <h1>Our Key Features</h1><br><br>
-                </div>
-                <div class="content2">
+                <div class="section-spacing"></div>
+
+                <!-- Page 2 - Bulk Broadcasting Feature -->
+                <section class="Page2" id="services">
+                    <div class="content1">
+                        <h2>Our Key Features</h2>
+                    </div>
+                    <div class="content2">
+                        <div class="left_box">
+                            <div class="box-content-1">
+                                <h3>Bulk Broadcasting</h3>
+                            </div>
+                            <div class="box-content-2">
+                                <p>Reach thousands of customers instantly <br>
+                                    with our Bulk Broadcasting feature! 🚀</p>
+                            </div>
+                        </div>
+                        <div class="right_box">
+                            <div class="box-content-1">
+                                <img src="assets/image copy 3.png" alt="Bulk broadcasting feature demonstration"
+                                    width="700" height="600" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="section-spacing"></div>
+
+                <!-- Page 3 - Feature Cards -->
+                <section class="Page3" aria-labelledby="broadcasting-features">
+                    <h2 id="broadcasting-features" class="visually-hidden">Broadcasting Features</h2>
+                    <div class="box-container">
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path
+                                        d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
+                                    <path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14" />
+                                    <path d="M8 6v8" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Send Messages at Scale</h4>
+                            <p class="box-content-3">Reach thousands of customers instantly with bulk WhatsApp
+                                broadcasts.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M16 14v2.2l1.6 1" />
+                                    <path d="M16 2v4" />
+                                    <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5" />
+                                    <path d="M3 10h5" />
+                                    <path d="M8 2v4" />
+                                    <circle cx="16" cy="16" r="6" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Personalized Messaging</h4>
+                            <p class="box-content-3">Use dynamic fields to customize messages with names, order details,
+                                and more.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M18 6 7 17l-5-5" />
+                                    <path d="m22 10-7.5 7.5L13 16" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Real Time Tracking</h4>
+                            <p class="box-content-3">Monitor delivery, read receipts, and customer interactions
+                                real-time.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <rect width="18" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">CRM & API Integration</h4>
+                            <p class="box-content-3">Connect with your existing CRM or use APIs to automate message
+                                workflows.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path
+                                        d="m21 17-2.156-1.868A.5.5 0 0 0 18 15.5v.5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1c0-2.545-3.991-3.97-8.5-4a1 1 0 0 0 0 5c4.153 0 4.745-11.295 5.708-13.5a2.5 2.5 0 1 1 3.31 3.284" />
+                                    <path d="M3 21h18" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Schedule & Automate</h4>
+                            <p class="box-content-3">Plan your campaigns in advance and send messages at the perfect
+                                time.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+                                    <path
+                                        d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+                                    <path d="m21 3 1 11h-2" />
+                                    <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+                                    <path d="M3 4h8" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Smart Segmentation</h4>
+                            <p class="box-content-3">Target specific customer groups based on preferences, behavior, or
+                                past interactions.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <rect width="18" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Interactive Messaging</h4>
+                            <p class="box-content-3">Send carousel, images, videos, PDFs, and interactive buttons to
+                                boost engagement.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <rect width="18" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Opt-Out Management</h4>
+                            <p class="box-content-3">Allow customers to unsubscribe effortlessly and stay compliant with
+                                WhatsApp policies.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <rect width="18" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">High Delivery Rates</h4>
+                            <p class="box-content-3">Powered by the Official WhatsApp Business API for reliable message
+                                delivery.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Page 4 - Shared Team Inbox -->
+                <section class="Page4" id="products">
                     <div class="left_box">
                         <div class="box-content-1">
-                            <span>Bulk Broadcasting</span>
-                        </div>
-                        <div class="box-content-2">
-                            <span>Reach thousands of customers instantly <br>
-                                with our Bulk Broadcasting feature! 🚀</span>
+                            <img src="assets/image copy 3.png" alt="Shared team inbox interface" width="700"
+                                height="600" loading="lazy">
                         </div>
                     </div>
-                    <div class="right_box">
-                        <div class="box-content-1">
-                            <img src="assets/image copy 3.png" alt="">
+                    <div class="content2">
+                        <div class="right_box">
+                            <div class="box-content-1">
+                                <h3>Shared Team Inbox</h3>
+                            </div>
+                            <div class="box-content-2">
+                                <p>Simplify Collaboration, Enhance Customer Support.</p>
+                            </div>
                         </div>
                     </div>
+                </section>
 
-                </div>
-            </div>
-            <br><br>
-            <!-- Page 3 -->
-            <div class="Page3">
-                <div class="box-container">
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-megaphone-icon lucide-megaphone">
-                                <path
-                                    d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
-                                <path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14" />
-                                <path d="M8 6v8" />
-                            </svg></div>
-                        <div class="box-content-2">Send Messages at Scale</div>
-                        <div class="box-content-3">Reach thousands of customers instantly with bulk WhatsApp broadcasts.
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-calendar-clock-icon lucide-calendar-clock">
-                                <path d="M16 14v2.2l1.6 1" />
-                                <path d="M16 2v4" />
-                                <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5" />
-                                <path d="M3 10h5" />
-                                <path d="M8 2v4" />
-                                <circle cx="16" cy="16" r="6" />
-                            </svg></div>
-                        <div class="box-content-2">Personalized Messaging</div>
-                        <div class="box-content-3">Use dynamic fields to customize messages with names, order details,
-                            and
-                            more.
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-check-check-icon lucide-check-check">
-                                <path d="M18 6 7 17l-5-5" />
-                                <path d="m22 10-7.5 7.5L13 16" />
-                            </svg></div>
-                        <div class="box-content-2">Real Time Tracking</div>
-                        <div class="box-content-3">Monitor delivery, read receipts, and customer interactions real-time.
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-layout-panel-top-icon lucide-layout-panel-top">
-                                <rect width="18" height="7" x="3" y="3" rx="1" />
-                                <rect width="7" height="7" x="3" y="14" rx="1" />
-                                <rect width="7" height="7" x="14" y="14" rx="1" />
-                            </svg></div>
-                        <div class="box-content-2">CRM & API Integration</div>
-                        <div class="box-content-3">Connect with your existing CRM or use APIs to automate message
-                            workflows.
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-signature-icon lucide-signature">
-                                <path
-                                    d="m21 17-2.156-1.868A.5.5 0 0 0 18 15.5v.5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1c0-2.545-3.991-3.97-8.5-4a1 1 0 0 0 0 5c4.153 0 4.745-11.295 5.708-13.5a2.5 2.5 0 1 1 3.31 3.284" />
-                                <path d="M3 21h18" />
-                            </svg></div>
-                        <div class="box-content-2">Schedule & Automate</div>
-                        <div class="box-content-3">Plan your campaigns in advance and send messages at the perfect time.
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-handshake-icon lucide-handshake">
-                                <path d="m11 17 2 2a1 1 0 1 0 3-3" />
-                                <path
-                                    d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
-                                <path d="m21 3 1 11h-2" />
-                                <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
-                                <path d="M3 4h8" />
-                            </svg></div>
-                        <div class="box-content-2">Smart Segmentation</div>
-                        <div class="box-content-3">Target specific customer groups based on preferences, behavior, or
-                            past
-                            interactions.</div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-layout-panel-top-icon lucide-layout-panel-top">
-                                <rect width="18" height="7" x="3" y="3" rx="1" />
-                                <rect width="7" height="7" x="3" y="14" rx="1" />
-                                <rect width="7" height="7" x="14" y="14" rx="1" />
-                            </svg></div>
-                        <div class="box-content-2">Interactive Messaging</div>
-                        <div class="box-content-3">Send carousel, images, videos, PDFs, and interactive buttons to boost
-                            engagement.</div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-layout-panel-top-icon lucide-layout-panel-top">
-                                <rect width="18" height="7" x="3" y="3" rx="1" />
-                                <rect width="7" height="7" x="3" y="14" rx="1" />
-                                <rect width="7" height="7" x="14" y="14" rx="1" />
-                            </svg></div>
-                        <div class="box-content-2">Opt-Out Management</div>
-                        <div class="box-content-3">Allow customers to unsubscribe effortlessly and stay compliant with
-                            WhatsApp
-                            policies.
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-layout-panel-top-icon lucide-layout-panel-top">
-                                <rect width="18" height="7" x="3" y="3" rx="1" />
-                                <rect width="7" height="7" x="3" y="14" rx="1" />
-                                <rect width="7" height="7" x="14" y="14" rx="1" />
-                            </svg></div>
-                        <div class="box-content-2">High Delivery Rates</div>
-                        <div class="box-content-3">Powered by the Official WhatsApp Business API for reliable message
-                            delivery.
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <div class="section-spacing"></div>
+                <div class="section-spacing"></div>
 
+                <!-- Page 5 - Team Inbox Features -->
+                <section class="Page5" aria-labelledby="inbox-features">
+                    <h2 id="inbox-features" class="visually-hidden">Team Inbox Features</h2>
+                    <div class="box-container">
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path
+                                        d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
+                                    <path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14" />
+                                    <path d="M8 6v8" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">One Number, Multiple <br>Agents</h4>
+                            <p class="box-content-3">Let your team chat with customers from a single WhatsApp number.
+                            </p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M16 14v2.2l1.6 1" />
+                                    <path d="M16 2v4" />
+                                    <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5" />
+                                    <path d="M3 10h5" />
+                                    <path d="M8 2v4" />
+                                    <circle cx="16" cy="16" r="6" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">All Chats in One Place</h4>
+                            <p class="box-content-3">Manage every conversation from one simple dashboard.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M18 6 7 17l-5-5" />
+                                    <path d="m22 10-7.5 7.5L13 16" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Work Together Easily</h4>
+                            <p class="box-content-3">Assign chats, track progress, and never miss a message.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <rect width="18" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Organize Your Chats</h4>
+                            <p class="box-content-3">Use tags to sort messages by priority or type.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path
+                                        d="m21 17-2.156-1.868A.5.5 0 0 0 18 15.5v.5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1c0-2.545-3.991-3.97-8.5-4a1 1 0 0 0 0 5c4.153 0 4.745-11.295 5.708-13.5a2.5 2.5 0 1 1 3.31 3.284" />
+                                    <path d="M3 21h18" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Private Team Notes</h4>
+                            <p class="box-content-3">Add internal notes without customers seeing them.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+                                    <path
+                                        d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+                                    <path d="m21 3 1 11h-2" />
+                                    <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+                                    <path d="M3 4h8" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Quick Replies</h4>
+                            <p class="box-content-3">Save and reuse responses for common questions.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <rect width="18" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Instant Updates</h4>
+                            <p class="box-content-3">Get real-time notifications on new messages.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <rect width="18" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Chat Analytics *</h4>
+                            <p class="box-content-3">Track response times and team performance.</p>
+                        </article>
+                    </div>
+                </section>
 
-            <!-- Page 4 -->
-            <div class="Page4">
-                <div class="left_box">
-                    <div class="box-content-1">
-                        <img src="assets/image copy 3.png" alt="">
-                    </div>
-                </div>
-                <div class="content2">
-                    <div class="right_box">
-                        <div class="box-content-1">
-                            <span>Shared Team Inbox</span>
+                <!-- Page 6 - No Code Chatbot -->
+                <section class="Page6" id="about">
+                    <div class="content2">
+                        <div class="left_box">
+                            <div class="box-content-1">
+                                <h3>No Code Chatbot</h3>
+                            </div>
+                            <div class="box-content-2">
+                                <p>Build powerful AI chatbots without writing <br>
+                                    a single line of code! 🤖</p>
+                            </div>
                         </div>
-                        <div class="box-content-2">
-                            <span>Simplify Collaboration, Enhance Customer Support.</span>
+                        <div class="right_box">
+                            <div class="box-content-1">
+                                <img src="assets/image copy 3.png" alt="No code chatbot builder interface" width="700"
+                                    height="600" loading="lazy">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </section>
 
-            <br><br><br><br><br>
+                <div class="section-spacing"></div>
 
-            <!-- Page 5 -->
-            <div class="Page5">
-                <div class="box-container">
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-megaphone-icon lucide-megaphone">
-                                <path
-                                    d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
-                                <path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14" />
-                                <path d="M8 6v8" />
-                            </svg></div>
-                        <div class="box-content-2">One Number, Multiple <br>Agents</div>
-                        <div class="box-content-3">Let your team chat with customers from a single WhatsApp number.
-                        </div>
+                <!-- Page 7 - Chatbot Features -->
+                <section class="Page7" aria-labelledby="chatbot-features">
+                    <h2 id="chatbot-features" class="visually-hidden">Chatbot Features</h2>
+                    <div class="box-container">
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path
+                                        d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
+                                    <path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14" />
+                                    <path d="M8 6v8" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Send Messages at Scale</h4>
+                            <p class="box-content-3">Reach thousands of customers instantly with bulk WhatsApp
+                                broadcasts.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M16 14v2.2l1.6 1" />
+                                    <path d="M16 2v4" />
+                                    <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5" />
+                                    <path d="M3 10h5" />
+                                    <path d="M8 2v4" />
+                                    <circle cx="16" cy="16" r="6" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Personalized Messaging</h4>
+                            <p class="box-content-3">Use dynamic fields to customize messages with names, order details,
+                                and more.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M18 6 7 17l-5-5" />
+                                    <path d="m22 10-7.5 7.5L13 16" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Real Time Tracking</h4>
+                            <p class="box-content-3">Monitor delivery, read receipts, and customer interactions
+                                real-time.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <rect width="18" height="7" x="3" y="3" rx="1" />
+                                    <rect width="7" height="7" x="3" y="14" rx="1" />
+                                    <rect width="7" height="7" x="14" y="14" rx="1" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">CRM & API Integration</h4>
+                            <p class="box-content-3">Connect with your existing CRM or use APIs to automate message
+                                workflows.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path
+                                        d="m21 17-2.156-1.868A.5.5 0 0 0 18 15.5v.5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1c0-2.545-3.991-3.97-8.5-4a1 1 0 0 0 0 5c4.153 0 4.745-11.295 5.708-13.5a2.5 2.5 0 1 1 3.31 3.284" />
+                                    <path d="M3 21h18" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Schedule & Automate</h4>
+                            <p class="box-content-3">Plan your campaigns in advance and send messages at the perfect
+                                time.</p>
+                        </article>
+                        <article class="box">
+                            <div class="box-content-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+                                    <path
+                                        d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+                                    <path d="m21 3 1 11h-2" />
+                                    <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+                                    <path d="M3 4h8" />
+                                </svg>
+                            </div>
+                            <h4 class="box-content-2">Smart Segmentation</h4>
+                            <p class="box-content-3">Target specific customer groups based on preferences, behavior, or
+                                past interactions.</p>
+                        </article>
                     </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-calendar-clock-icon lucide-calendar-clock">
-                                <path d="M16 14v2.2l1.6 1" />
-                                <path d="M16 2v4" />
-                                <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5" />
-                                <path d="M3 10h5" />
-                                <path d="M8 2v4" />
-                                <circle cx="16" cy="16" r="6" />
-                            </svg></div>
-                        <div class="box-content-2">All Chats in One Place</div>
-                        <div class="box-content-3">Manage every conversation from one simple dashboard.</div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-check-check-icon lucide-check-check">
-                                <path d="M18 6 7 17l-5-5" />
-                                <path d="m22 10-7.5 7.5L13 16" />
-                            </svg></div>
-                        <div class="box-content-2">Work Together Easily</div>
-                        <div class="box-content-3">Assign chats, track progress, and never miss a message.</div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-layout-panel-top-icon lucide-layout-panel-top">
-                                <rect width="18" height="7" x="3" y="3" rx="1" />
-                                <rect width="7" height="7" x="3" y="14" rx="1" />
-                                <rect width="7" height="7" x="14" y="14" rx="1" />
-                            </svg></div>
-                        <div class="box-content-2">Organize Your Chats</div>
-                        <div class="box-content-3">Use tags to sort messages by priority or type.</div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-signature-icon lucide-signature">
-                                <path
-                                    d="m21 17-2.156-1.868A.5.5 0 0 0 18 15.5v.5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1c0-2.545-3.991-3.97-8.5-4a1 1 0 0 0 0 5c4.153 0 4.745-11.295 5.708-13.5a2.5 2.5 0 1 1 3.31 3.284" />
-                                <path d="M3 21h18" />
-                            </svg></div>
-                        <div class="box-content-2">Private Team Notes</div>
-                        <div class="box-content-3">Add internal notes without customers seeing them.</div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-handshake-icon lucide-handshake">
-                                <path d="m11 17 2 2a1 1 0 1 0 3-3" />
-                                <path
-                                    d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
-                                <path d="m21 3 1 11h-2" />
-                                <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
-                                <path d="M3 4h8" />
-                            </svg></div>
-                        <div class="box-content-2">Quick Replies</div>
-                        <div class="box-content-3">Save and reuse responses for common questions.</div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-layout-panel-top-icon lucide-layout-panel-top">
-                                <rect width="18" height="7" x="3" y="3" rx="1" />
-                                <rect width="7" height="7" x="3" y="14" rx="1" />
-                                <rect width="7" height="7" x="14" y="14" rx="1" />
-                            </svg></div>
-                        <div class="box-content-2">Instant Updates</div>
-                        <div class="box-content-3">Get real-time notifications on new messages.</div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-layout-panel-top-icon lucide-layout-panel-top">
-                                <rect width="18" height="7" x="3" y="3" rx="1" />
-                                <rect width="7" height="7" x="3" y="14" rx="1" />
-                                <rect width="7" height="7" x="14" y="14" rx="1" />
-                            </svg></div>
-                        <div class="box-content-2">Chat Analytics *</div>
-                        <div class="box-content-3">Track response times and team performance.</div>
-                    </div>
-                </div>
-            </div>
+                </section>
 
-            <!-- Page 6 -->
-            <div class="Page6">
-                <div class="content2">
-                    <div class="left_box">
-                        <div class="box-content-1">
-                            <span>No Code Chatbot</span>
-                        </div>
-                        <div class="box-content-2">
-                            <span>Reach thousands of customers instantly <br>
-                                with our Bulk Broadcasting feature! 🚀</span>
+                <!-- Marquee - Clients Section -->
+                <section class="marquee" id="clients">
+                    <h2 class="heading">Our Clients</h2>
+                    <div class="marquee-wrapper">
+                        <div class="marquee-content">
+                            <img src="assets/trogon_logo_svg.svg" alt="Trogon logo" width="250" height="80"
+                                loading="lazy">
+                            <img src="assets/elision_logo_blue.svg" alt="Elision logo" width="250" height="80"
+                                loading="lazy">
+                            <img src="assets/Screenshot-2025-02-27-at-12.01.32 AM.png" alt="Client logo" width="250"
+                                height="80" loading="lazy">
+                            <img src="assets/people_possible_logo_black.svg" alt="People Possible logo" width="250"
+                                height="80" loading="lazy">
+                            <img src="assets/vryno_new_logo.svg" alt="Vryno logo" width="250" height="80"
+                                loading="lazy">
+                            <img src="assets/weldew-remedies-300x177.png" alt="Weldew Remedies logo" width="250"
+                                height="80" loading="lazy">
+                            <img src="assets/evindiaonline_cover-768x192.jpeg" alt="EV India Online logo" width="250"
+                                height="80" loading="lazy">
+                            <!-- Duplicate for seamless loop -->
+                            <img src="assets/trogon_logo_svg.svg" alt="Trogon logo" width="250" height="80"
+                                loading="lazy">
+                            <img src="assets/elision_logo_blue.svg" alt="Elision logo" width="250" height="80"
+                                loading="lazy">
+                            <img src="assets/Screenshot-2025-02-27-at-12.01.32 AM.png" alt="Client logo" width="250"
+                                height="80" loading="lazy">
+                            <img src="assets/people_possible_logo_black.svg" alt="People Possible logo" width="250"
+                                height="80" loading="lazy">
+                            <img src="assets/vryno_new_logo.svg" alt="Vryno logo" width="250" height="80"
+                                loading="lazy">
+                            <img src="assets/weldew-remedies-300x177.png" alt="Weldew Remedies logo" width="250"
+                                height="80" loading="lazy">
+                            <img src="assets/evindiaonline_cover-768x192.jpeg" alt="EV India Online logo" width="250"
+                                height="80" loading="lazy">
                         </div>
                     </div>
-                    <div class="right_box">
-                        <div class="box-content-1">
-                            <img src="assets/image copy 3.png" alt="">
-                        </div>
-                    </div>
+                </section>
+            </main>
 
-                </div>
-                <br><br>
-            </div>
-            <!-- Page 7 -->
-            <div class="Page7">
-                <div class="box-container">
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-megaphone-icon lucide-megaphone">
-                                <path
-                                    d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
-                                <path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14" />
-                                <path d="M8 6v8" />
-                            </svg></div>
-                        <div class="box-content-2">Send Messages at Scale</div>
-                        <div class="box-content-3">Reach thousands of customers instantly with bulk WhatsApp broadcasts.
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-calendar-clock-icon lucide-calendar-clock">
-                                <path d="M16 14v2.2l1.6 1" />
-                                <path d="M16 2v4" />
-                                <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5" />
-                                <path d="M3 10h5" />
-                                <path d="M8 2v4" />
-                                <circle cx="16" cy="16" r="6" />
-                            </svg></div>
-                        <div class="box-content-2">Personalized Messaging</div>
-                        <div class="box-content-3">Use dynamic fields to customize messages with names, order details,
-                            and
-                            more.
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-check-check-icon lucide-check-check">
-                                <path d="M18 6 7 17l-5-5" />
-                                <path d="m22 10-7.5 7.5L13 16" />
-                            </svg></div>
-                        <div class="box-content-2">Real Time Tracking</div>
-                        <div class="box-content-3">Monitor delivery, read receipts, and customer interactions real-time.
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-layout-panel-top-icon lucide-layout-panel-top">
-                                <rect width="18" height="7" x="3" y="3" rx="1" />
-                                <rect width="7" height="7" x="3" y="14" rx="1" />
-                                <rect width="7" height="7" x="14" y="14" rx="1" />
-                            </svg></div>
-                        <div class="box-content-2">CRM & API Integration</div>
-                        <div class="box-content-3">Connect with your existing CRM or use APIs to automate message
-                            workflows.
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-signature-icon lucide-signature">
-                                <path
-                                    d="m21 17-2.156-1.868A.5.5 0 0 0 18 15.5v.5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1c0-2.545-3.991-3.97-8.5-4a1 1 0 0 0 0 5c4.153 0 4.745-11.295 5.708-13.5a2.5 2.5 0 1 1 3.31 3.284" />
-                                <path d="M3 21h18" />
-                            </svg></div>
-                        <div class="box-content-2">Schedule & Automate</div>
-                        <div class="box-content-3">Plan your campaigns in advance and send messages at the perfect time.
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="box-content-1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-handshake-icon lucide-handshake">
-                                <path d="m11 17 2 2a1 1 0 1 0 3-3" />
-                                <path
-                                    d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
-                                <path d="m21 3 1 11h-2" />
-                                <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
-                                <path d="M3 4h8" />
-                            </svg></div>
-                        <div class="box-content-2">Smart Segmentation</div>
-                        <div class="box-content-3">Target specific customer groups based on preferences, behavior, or
-                            past
-                            interactions.</div>
-                    </div>
-                </div>
-            </div>
+            <div class="section-spacing"></div>
 
-            <!-- Marquee -->
-            <div class="marquee">
-                <div class="heading">Our Clients: </div>
-
-                <div class="main-marquee-content">
-                    <marquee behavior="scroll" direction="left">
-                        <img src="assets/trogon_logo_svg.svg" alt="">
-                        <img src="assets/elision_logo_blue.svg" alt="">
-                        <img src="assets/Screenshot-2025-02-27-at-12.01.32 AM.png" alt="">
-                        <img src="assets/people_possible_logo_black.svg" alt="">
-                        <img src="assets/vryno_new_logo.svg" alt="">
-                        <img src="assets/weldew-remedies-300x177.png" alt="">
-                        <img src="assets/evindiaonline_cover-768x192.jpeg" alt="">
-                    </marquee>
-                </div>
-            </div>
-        </body>
-        <br><br><br>
-        <!-- Footer -->
-        <footer>
-            <div class="content">
-                <div class="box1">
-                    <div class="box1_content">
-                        <img src="assets/image copy 17.png" alt="">
+            <!-- Footer -->
+            <footer id="contact">
+                <div class="content">
+                    <div class="box1">
+                        <div class="box1_content">
+                            <img src="assets/image copy 17.png" alt="Renav Technologies logo" width="200" height="150"
+                                loading="lazy">
+                        </div>
+                        <div class="box1_content">
+                            <p>We blend creativity and technology to build seamless websites and custom software
+                                solutions that drive results.</p>
+                        </div>
                     </div>
-                    <div class="box1_content">
-                        <p>We blend creativity and technology to build seamless websites and custom software solutions
-                            that
-                            drive results.</p>
+                    <div class="box2">
+                        <div class="box2_content">
+                            <p>Products</p>
+                            <a href="#products">UVDialer</a>
+                            <a href="#products">TheMessenger</a>
+                        </div>
                     </div>
-                </div>
-                <div class="box2">
-                    <div class="box2_content">
-                        <p>Products</p>
-                        <a href="">UVDialer</a>
-                        <a href="">TheMessenger</a>
+                    <div class="box3">
+                        <div class="box3_content">
+                            <p>Services</p>
+                            <a href="#services">WordPress Development</a>
+                            <a href="#services">Web Applications</a>
+                            <a href="#services">Webflow Development</a>
+                            <a href="#services">Shopify Development</a>
+                            <a href="#services">Statamic Development</a>
+                        </div>
                     </div>
-                </div>
-                <div class="box3">
-                    <div class="box3_content">
-                        <p>Services</p>
-                        <a href="">WordPress Development</a>
-                        <a href="">Web Applications</a>
-                        <a href="">Webflow Development</a>
-                        <a href="">Shopify Development</a>
-                        <a href="">Statamic Development</a>
+                    <div class="box4">
+                        <div class="box4_content">
+                            <p>Quick Links</p>
+                            <a href="#about">About</a>
+                            <a href="#contact">Contact</a>
+                            <a href="#clients">Case Studies</a>
+                            <a href="#contact">Privacy Policy</a>
+                        </div>
                     </div>
                 </div>
-                <div class="box4">
-                    <div class="box4_content">
-                        <p>Quick Links</p>
-                        <a href="">About</a>
-                        <a href="">Contact</a>
-                        <a href="">Case Studies</a>
-                        <a href="">Privacy Policy</a>
-                    </div>
+                <div class="copyright">
+                    <p>&copy; Renav Ltd. Registered in England & Wales. Company Registration Number: 08758164 <br>
+                        Registered Office: 449 Honeypot Lane, Stanmore, England, HA7 1JJ</p>
                 </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; Renav Ltd. Registered in England & Wales. Company Registration Number: 08758164 <br>
-                    Registered Office: 449 Honeypot Lane, Stanmore, England, HA7 1JJ</p>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </div>
-</div>
+
+    <script src="js/main.js"></script>
+</body>
 
 </html>
