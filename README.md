@@ -10,6 +10,7 @@ A curated collection of **frontend development projects** showcasing modern web 
 
 | Project | Description | Key Technologies | Live Demo |
 | :--- | :--- | :--- | :---: |
+| **[Baby Bloom](./baby-bloom-website/)** | Garbhasanskar and prenatal care website with intro animation | HTML5, CSS3, JS, Canvas | [🔗 Live Demo](https://vp1107.github.io/frontend-projects/baby-bloom-website/) |
 | **[Chef4U Catering](./chef4u-sample-website/)** | Premium catering service landing page with contact form integration | HTML5, CSS3, Google Sheets API | [🔗 Live Demo](https://vp1107.github.io/frontend-projects/chef4u-sample-website/) |
 | **[Renav Messenger](./renav-messenger-website-clone/)** | Landing page for TheMessenger - WhatsApp Business API solution | HTML5, CSS3, Responsive Design | [🔗 Live Demo](https://vp1107.github.io/frontend-projects/renav-messenger-website-clone/) |
 | **[Renav Official](./renav-official-website-clone/)** | Corporate website for Renav Technologies | HTML5, CSS3, JavaScript | [🔗 Live Demo](https://vp1107.github.io/frontend-projects/renav-official-website-clone/) |
@@ -44,6 +45,10 @@ A curated collection of **frontend development projects** showcasing modern web 
 ```
 frontend-projects/
 ├── README.md                          # This file
+├── baby-bloom-website/                # Garbhasanskar and prenatal care site
+│   ├── index.html
+│   ├── css/style.css
+│   └── assets/
 ├── chef4u-sample-website/             # Catering service landing page
 │   ├── index.html
 │   ├── css/style.css
@@ -67,6 +72,7 @@ frontend-projects/
 ### View Live Demos
 
 All projects are deployed on GitHub Pages:
+- 🔗 [Baby Bloom](https://vp1107.github.io/frontend-projects/baby-bloom-website/)
 - 🔗 [Chef4U Catering](https://vp1107.github.io/frontend-projects/chef4u-sample-website/)
 - 🔗 [Renav Messenger](https://vp1107.github.io/frontend-projects/renav-messenger-website-clone/)
 - 🔗 [Renav Official](https://vp1107.github.io/frontend-projects/renav-official-website-clone/)
@@ -90,6 +96,9 @@ All projects are deployed on GitHub Pages:
 ---
 
 ## 📋 Project Details
+
+### Baby Bloom
+A comprehensive website for Garbhasanskar (prenatal care), featuring a unique canvas-based intro animation, detailed program information, pricing packages, and a blog section.
 
 ### Chef4U Catering
 A premium landing page for a catering service featuring an integrated inquiry form that saves submissions to Google Sheets. Includes WhatsApp integration for quick communication.

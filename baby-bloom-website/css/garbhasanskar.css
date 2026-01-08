@@ -1,0 +1,215 @@
+/* Garbhasanskar Page Specific Styles */
+
+/* Hero Section */
+.gs-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/hero-background.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.gs-hero-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gs-hero-content p {
+    font-size: 24px;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Intro Section */
+.gs-intro {
+    padding: 100px 20px;
+    background: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.gs-intro h2,
+.gs-pillars h2,
+.gs-routine h2 {
+    font-size: 42px;
+    color: var(--navy-blue);
+    margin-bottom: 20px;
+}
+
+.lead-text {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 60px;
+    font-style: italic;
+}
+
+.gs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.gs-card {
+    padding: 40px;
+    background: var(--light-pink-subtle);
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.gs-card:hover {
+    transform: translateY(-10px);
+}
+
+.gs-card h3 {
+    font-size: 24px;
+    color: var(--navy-blue);
+    margin-bottom: 15px;
+}
+
+.gs-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Pillars Section */
+.gs-pillars {
+    padding: 100px 20px;
+    background: #fdfdfd;
+}
+
+.pillars-grid {
+    display: async flex;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.pillar-card {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.pillar-card:hover {
+    transform: translateY(-5px);
+}
+
+.pillar-card.music {
+    border-color: #FF6B6B;
+}
+
+.pillar-card.yoga {
+    border-color: #4ECDC4;
+}
+
+.pillar-card.diet {
+    border-color: #FFE66D;
+}
+
+.pillar-card .icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.pillar-card h3 {
+    font-size: 22px;
+    color: var(--navy-blue);
+    margin-bottom: 10px;
+}
+
+/* Routine Timeline */
+.gs-routine {
+    padding: 100px 20px;
+    background: white;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto 0;
+    padding-left: 30px;
+    border-left: 3px solid var(--primary-pink);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -39px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: var(--primary-pink);
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 0 2px var(--primary-pink);
+}
+
+.timeline-item .time {
+    display: inline-block;
+    background: var(--primary-pink);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.timeline-item .content h4 {
+    font-size: 20px;
+    color: var(--navy-blue);
+    margin-bottom: 5px;
+}
+
+.timeline-item .content p {
+    color: #666;
+}
+
+/* Scroll Animation Classes */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .gs-hero-content h1 {
+        font-size: 36px;
+    }
+
+    .gs-hero-content p {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Baby Bloom - Experience the joy of pregnancy with our Garbhasanskar program. Expert prenatal care for healthy mother, happy baby, bright future.">
+    <title>Baby Bloom | Garbhasanskar & Prenatal Care</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://babybloom.com/">
+    <meta property="og:title" content="Baby Bloom | Garbhasanskar & Prenatal Care">
+    <meta property="og:description"
+        content="Expert prenatal care combining ancient Vedic wisdom with modern science. Join 5000+ happy families today.">
+    <meta property="og:image" content="https://babybloom.com/assets/hero-image.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://babybloom.com/">
+    <meta property="twitter:title" content="Baby Bloom | Garbhasanskar & Prenatal Care">
+    <meta property="twitter:description"
+        content="Expert prenatal care combining ancient Vedic wisdom with modern science.">
+    <meta property="twitter:image" content="https://babybloom.com/assets/hero-image.webp">
+
+    <!-- Performance Optimization: Preload Hero Image -->
+    <link rel="preload" as="image" href="./assets/hero-image.webp">
+    <!-- Google Analytics (GA4) Placeholder -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script> 
+    -->
+</head>
+
+<body>
+    <!-- Intro Animation Overlay -->
+    <div class="intro-overlay" id="introOverlay">
+        <canvas id="bgParticles"></canvas>
+        <div class="intro-animation">
+            <div class="animation-stage" id="stage1">
+                <img src="./assets/anim-stage-1.webp" alt="First Trimester">
+                <p>First Trimester</p>
+            </div>
+            <div class="animation-stage" id="stage2">
+                <img src="./assets/anim-stage-2.webp" alt="Second Trimester">
+                <p>Second Trimester</p>
+            </div>
+            <div class="animation-stage" id="stage3">
+                <img src="./assets/anim-stage-3.webp" alt="Third Trimester">
+                <p>Third Trimester</p>
+            </div>
+            <div class="animation-stage" id="stage4">
+                <img src="./assets/anim-stage-4.webp" alt="Mother with Baby">
+                <p>A New Beginning</p>
+            </div>
+            <div class="intro-logo" id="introLogo">
+                <img src="./assets/logo.webp" alt="Baby Bloom">
+                <p>Healthy Mother, Happy Baby, Bright Future</p>
+            </div>
+        </div>
+        <div class="skip-intro" onclick="skipIntro()">Skip Intro</div>
+    </div>
+
+    <!-- Zoom Transition Overlay -->
+    <div class="zoom-transition" id="zoomTransition"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">  
+                <img src="./assets/logo.webp" alt="Baby Bloom Logo">
+            </div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="javascript:void(0)" onclick="handlePageTransition('garbhasanskar.html')">Garbhasanskar</a>
+        </li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="whatsapp-icon">
+                <button onclick="window.open('https://wa.me/919876543210', '_blank')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M18.403 5.633A8.92 8.92 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a9 9 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.93 8.93 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.45 7.45 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.45 7.45 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.41 7.41 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73s-.354-.112-.504.112-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393s.149-.224.224-.374.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a10 10 0 0 0-.429-.008.83.83 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321 1.582 2.415 3.832 3.387c.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066s.187-.973.131-1.067-.207-.151-.43-.263"
+                            clip-rule="evenodd" />
+                    </svg>
+                    Let's Chat
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Baby Bloom</h1>
+            <p>Experience the joy of pregnancy with our Garbhasanskar</p>
+            <button class="hero-button"
+                onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" />
+                    <path d="M12 13h5v5h-5z" />
+                </svg>
+                Book your appointment today
+            </button>
+        </div>
+        <div class="hero-image">
+            <img src="./assets/hero-image.webp" alt="Happy pregnancy journey with Baby Bloom" width="500" height="500"
+                fetchpriority="high">
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>At Baby Bloom, we are committed to providing the best possible care for pregnant women and their
+                families. Our Garbhasanskar program is designed to help expectant mothers prepare for the joys and
+                challenges of pregnancy. We believe in nurturing both the mother and the unborn child through ancient
+                Vedic practices combined with modern scientific approaches. Our expert team guides you through every
+                step of this beautiful journey, ensuring a healthy pregnancy and a bright future for your little one.
+            </p>
+            <button class="about-button" onclick="handlePageTransition('garbhasanskar.html')">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                </svg>
+            </button>
+        </div>
+        <div class="about-image">
+            <img src="./assets/about-image.webp" alt="About Baby Bloom - Caring for mothers" loading="lazy" width="450"
+                height="450">
+        </div>
+    </section>
+
+    <!-- Teacher/Expert Section -->
+    <section class="teacher" id="expert">
+        <div class="teacher-content">
+            <h2>Meet Our Expert</h2>
+            <h3>Dr. Ananya Sharma</h3>
+            <h4>MBBS, Garbhasanskar Specialist</h4>
+            <p>With over 15 years of experience in prenatal care and holistic wellness, Dr. Ananya Sharma guides
+                expectant mothers through a journey of spiritual and physical well-being. Her unique approach combines
+                modern medical science with ancient Vedic wisdom to ensure a healthy mother and a brilliant child.</p>
+            <ul class="qualifications">
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg> Certified Garbhasanskar Trainer</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg> 5000+ Happy Families Guided</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg> Expert in Yoga & Meditation</li>
+            </ul>
+        </div>
+        <div class="teacher-image">
+            <img src="./assets/teacher-image.webp" alt="Dr. Ananya Sharma - Garbhasanskar Expert" loading="lazy"
+                width="450" height="550">
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose" id="why-choose">
+        <div class="why-choose-header">
+            <h2>Why Choose Us?</h2>
+            <p>Discover the benefits of our comprehensive Garbhasanskar program</p>
+        </div>
+        <div class="why-choose-container">
+            <div class="features-left">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Expert Guidance</h3>
+                        <p>Certified Garbhasanskar practitioners with years of experience</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Personalized Care</h3>
+                        <p>Customized programs tailored to your unique pregnancy journey</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z" />
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Holistic Approach</h3>
+                        <p>Combining ancient wisdom with modern prenatal science</p>
+                    </div>
+                </div>
+            </div>
+            <div class="why-choose-image">
+                <img src="./assets/why-choose-image.webp" alt="Happy pregnant woman" loading="lazy" width="400"
+                    height="500">
+            </div>
+            <div class="features-right">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Flexible Scheduling</h3>
+                        <p>Sessions designed to fit your busy lifestyle</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Community Support</h3>
+                        <p>Join a supportive community of expecting mothers</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Comprehensive Resources</h3>
+                        <p>Access to guides, videos, and educational materials</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="packages">
+        <div class="pricing-header">
+            <h2>Our Packages</h2>
+            <p>Choose the perfect care plan for your journey</p>
+        </div>
+        <div class="pricing-container">
+            <!-- Silver Package -->
+            <div class="pricing-card silver">
+                <div class="card-header">
+                    <h3>Silver</h3>
+                    <div class="price">₹4,999<span>/mo</span></div>
+                    <p>Essential Care</p>
+                </div>
+                <ul class="features">
+                    <li><i class="check-icon">✓</i> Weekly Online Sessions</li>
+                    <li><i class="check-icon">✓</i> Basic Diet Chart</li>
+                    <li><i class="check-icon">✓</i> Garbhasanskar Music</li>
+                    <li><i class="check-icon">✓</i> Group Meditation</li>
+                </ul>
+                <a href="#contact" class="pricing-btn">Choose Silver</a>
+            </div>
+
+            <!-- Gold Package -->
+            <div class="pricing-card gold popular">
+                <div class="popular-tag">Most Popular</div>
+                <div class="card-header">
+                    <h3>Gold</h3>
+                    <div class="price">₹7,999<span>/mo</span></div>
+                    <p>Complete Wellness</p>
+                </div>
+                <ul class="features">
+                    <li><i class="check-icon">✓</i> <strong>All Silver Features</strong></li>
+                    <li><i class="check-icon">✓</i> Personalized Yoga Plan</li>
+                    <li><i class="check-icon">✓</i> 24/7 WhatsApp Support</li>
+                    <li><i class="check-icon">✓</i> 1-on-1 Counseling (Weekly)</li>
+                    <li><i class="check-icon">✓</i> Partner Sessions</li>
+                </ul>
+                <a href="#contact" class="pricing-btn primary">Choose Gold</a>
+            </div>
+
+            <!-- Platinum Package -->
+            <div class="pricing-card platinum">
+                <div class="card-header">
+                    <h3>Platinum</h3>
+                    <div class="price">₹11,999<span>/mo</span></div>
+                    <p>Premium Mother Care</p>
+                </div>
+                <ul class="features">
+                    <li><i class="check-icon">✓</i> <strong>All Gold Features</strong></li>
+                    <li><i class="check-icon">✓</i> Personal Dietician Access</li>
+                    <li><i class="check-icon">✓</i> Daily Progress Tracking</li>
+                    <li><i class="check-icon">✓</i> Post-natal Care Guide</li>
+                    <li><i class="check-icon">✓</i> Home Visit (Optional)</li>
+                </ul>
+                <a href="#contact" class="pricing-btn">Choose Platinum</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="testimonials-header">
+            <h2>Stories of Joy</h2>
+            <p>Listen to the experiences of our happy mothers</p>
+        </div>
+        <div class="video-grid">
+            <div class="video-card" onclick="alert('Playing video testimonial... (Video integration coming soon!)')">
+                <div class="video-thumbnail">
+                    <img src="./assets/video-thumb-1.png" alt="Happy Mother Testimonial" loading="lazy" width="350"
+                        height="200">
+                    <div class="play-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48"
+                            height="48">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h3>Priya's Journey</h3>
+                    <p>"The yoga sessions helped me stay active and stress-free throughout my pregnancy."</p>
+                </div>
+            </div>
+
+            <!-- Real Testimonials moved from old section -->
+            <div class="testimonial-card">
+                <div class="testimonial-image">
+                    <img src="./assets/testimonial-2.webp" alt="Ananya Patel" loading="lazy" width="100" height="100">
+                </div>
+                <div class="testimonial-stars">
+                    <span>★★★★★</span>
+                </div>
+                <p class="testimonial-text">"The personalized attention and expert guidance made all the difference. I
+                    felt supported every step of the way. Highly recommend Baby Bloom!"</p>
+                <h4 class="testimonial-name">Ananya Patel</h4>
+                <span class="testimonial-title">Mother of Two</span>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-image">
+                    <img src="./assets/testimonial-3.webp" alt="Sneha Reddy" loading="lazy" width="100" height="100">
+                </div>
+                <div class="testimonial-stars">
+                    <span>★★★★★</span>
+                </div>
+                <p class="testimonial-text">"I was skeptical at first, but the results speak for themselves. The music
+                    therapy and positive affirmations created such a beautiful bond."</p>
+                <h4 class="testimonial-name">Sneha Reddy</h4>
+                <span class="testimonial-title">Working Mom</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="blog-header">
+            <h2>Pregnancy Wellness Hub</h2>
+            <p>Expert tips and insights for a healthy journey</p>
+        </div>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="./assets/blog-1.png" alt="Healthy Pregnancy Diet" loading="lazy" width="400" height="250">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">Jan 05, 2024</span>
+                    <h3>Essential Nutrition for Two</h3>
+                    <p>Discover the power of traditional Indian superfoods perfect for your trimester.</p>
+                    <a href="#" class="read-more">Read Article →</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="./assets/blog-2.png" alt="Prenatal Yoga" loading="lazy" width="400" height="250">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">Jan 02, 2024</span>
+                    <h3>5 Calming Yoga Poses</h3>
+                    <p>Simple poses to relieve back pain and prepare your body for labor.</p>
+                    <a href="#" class="read-more">Read Article →</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="./assets/hero-image.webp" alt="Mental Wellness" loading="lazy" width="400" height="250">
+                    <!-- Placeholder reuse -->
+                </div>
+                <div class="blog-content">
+                    <span class="blog-date">Dec 28, 2023</span>
+                    <h3>Bonding Before Birth</h3>
+                    <p>How Garbhasanskar helps build a deep connection with your unborn child.</p>
+                    <a href="#" class="read-more">Read Article →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs" id="faqs">
+        <div class="faqs-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know about Garbhasanskar</p>
+        </div>
+        <div class="faqs-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is Garbhasanskar?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Garbhasanskar is an ancient Indian practice that focuses on the physical, mental, and spiritual
+                        development of the unborn child. It involves various activities like meditation, music therapy,
+                        positive affirmations, and healthy lifestyle practices during pregnancy.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>When should I start Garbhasanskar?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Ideally, Garbhasanskar can be started as early as the first trimester. However, it's never too
+                        late to begin. Many mothers start in their second trimester and still experience wonderful
+                        benefits for themselves and their babies.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What are the benefits of Garbhasanskar?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Benefits include reduced stress and anxiety, better bonding with your baby, improved sleep,
+                        positive emotional development of the child, enhanced cognitive abilities, and a more peaceful
+                        pregnancy experience overall.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How are the sessions conducted?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Our sessions are conducted both online and offline. We offer personalized one-on-one sessions,
+                        group workshops, and self-paced learning modules. Each session includes guided meditation, music
+                        therapy, diet guidance, and interactive activities.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is Garbhasanskar scientifically proven?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! Modern research supports many Garbhasanskar practices. Studies show that babies can hear and
+                        respond to sounds from the womb, maternal stress affects fetal development, and positive
+                        prenatal experiences contribute to better outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Form Section -->
+    <section class="contact" id="contact">
+        <div class="contact-image">
+            <img src="./assets/form-image.webp" alt="Contact Baby Bloom" loading="lazy" width="450" height="450">
+        </div>
+        <div class="contact-form-container">
+            <div class="contact-header">
+                <h2>Get in Touch</h2>
+                <p>Book your consultation today and start your beautiful journey</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" aria-label="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email"
+                        required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number"
+                        aria-label="Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <select id="trimester" name="trimester" aria-label="Select your trimester" required>
+                        <option value="" disabled selected>Select your trimester</option>
+                        <option value="planning">Planning Pregnancy</option>
+                        <option value="first">First Trimester</option>
+                        <option value="second">Second Trimester</option>
+                        <option value="third">Third Trimester</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" aria-label="Your Message"
+                        rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-button">
+                    Book Consultation
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community" id="community">
+        <div class="community-header">
+            <h2>Baby Bloom Community</h2>
+            <p>Connect, Share, and Grow with other mothers</p>
+        </div>
+        <div class="community-container">
+            <!-- Events Column -->
+            <div class="community-column">
+                <h3>Upcoming Live Events</h3>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">12</span>
+                        <span class="month">JAN</span>
+                    </div>
+                    <div class="event-details">
+                        <h4>Mindful Pregnancy Yoga</h4>
+                        <p>Join Dr. Ananya for a relaxing session.</p>
+                        <span class="event-time">Sat, 10:00 AM • Zoom</span>
+                    </div>
+                    <button class="join-btn" onclick="alert('Join link coming soon!')">Join</button>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">JAN</span>
+                    </div>
+                    <div class="event-details">
+                        <h4>Nutrition for Two</h4>
+                        <p>Expert tips on balanced diet.</p>
+                        <span class="event-time">Wed, 4:00 PM • Live</span>
+                    </div>
+                    <button class="join-btn" onclick="alert('Webinar registration opening soon!')">Join</button>
+                </div>
+            </div>
+
+            <!-- Forum Column -->
+            <div class="community-column">
+                <h3>Trending Discussions</h3>
+                <div class="forum-list">
+                    <div class="forum-topic">
+                        <div class="topic-icon">👶</div>
+                        <div class="topic-content">
+                            <h4>Hospital Bag Checklist</h4>
+                            <p>What did you actually use? Need advice!</p>
+                            <span class="topic-meta">52 replies • Active 2h ago</span>
+                        </div>
+                    </div>
+                    <div class="forum-topic">
+                        <div class="topic-icon">💤</div>
+                        <div class="topic-content">
+                            <h4>Third Trimester Sleep Tips</h4>
+                            <p>Struggling to find a comfortable position...</p>
+                            <span class="topic-meta">34 replies • Active 5h ago</span>
+                        </div>
+                    </div>
+                    <div class="forum-topic">
+                        <div class="topic-icon">🧘‍♀️</div>
+                        <div class="topic-content">
+                            <h4>Post-partum Recovery</h4>
+                            <p>Healing naturally with Garbhasanskar.</p>
+                            <span class="topic-meta">18 replies • Active 1d ago</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="view-forum-btn">View All Topics →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section footer-about">
+                <img src="./assets/logo.webp" alt="Baby Bloom Logo" class="footer-logo">
+                <p>Healthy Mother, Happy Baby, Bright Future. We are dedicated to nurturing the beautiful bond between
+                    mother and child through the ancient practice of Garbhasanskar.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/919876543210" class="social-icon" aria-label="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M18.403 5.633A8.92 8.92 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a9 9 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.93 8.93 0 0 0-2.627-6.35" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#why-choose">Garbhasanskar</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-contact">
+                <h3>Contact Info</h3>
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                    </svg>
+                    <p>123 Baby Bloom Center,<br>Ahmedabad, Gujarat 380001</p>
+                </div>
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                    </svg>
+                    <p>+91 98765 43210</p>
+                </div>
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                    <p>info@babybloom.com</p>
+                </div>
+            </div>
+            <div class="footer-section footer-hours">
+                <h3>Working Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 7:00 PM</p>
+                <p>Saturday: 9:00 AM - 5:00 PM</p>
+                <p>Sunday: Closed</p>
+                <div class="footer-cta">
+                    <a href="#contact" class="footer-button">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Baby Bloom. All Rights Reserved. | Designed with ❤️ for expecting mothers</p>
+        </div>
+    </footer>
+
+    <!-- Floating Elements -->
+    <a href="https://wa.me/919876543210" class="float-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+        </svg>
+    </a>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
