@@ -210,6 +210,16 @@ body.loaded .footer {
     z-index: 1000;
 }
 
+/* Connect Links Centering */
+@media (min-width: 993px) {
+    .nav-links {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+    }
+}
+
 .logo img {
     width: 180px;
 }
