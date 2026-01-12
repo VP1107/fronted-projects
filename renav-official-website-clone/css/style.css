@@ -344,6 +344,10 @@ body {
     font-weight: lighter;
 }
 
+.page1 .home-content2 p {
+    font-size: clamp(18px, 2vw, 25px);
+}
+
 /* Text Rotation Animation */
 .page1 .div_animation {
     display: inline-block;
@@ -475,6 +479,10 @@ body {
     margin-top: clamp(40px, 6vw, 70px);
     font-size: clamp(18px, 2vw, 25px);
     color: rgb(94, 94, 99);
+}
+
+.page2 .left_box_content2 p+p {
+    margin-top: 20px;
 }
 
 .page2 .right_box {
@@ -792,6 +800,10 @@ body {
     font-size: clamp(18px, 2vw, 25px);
     margin-top: 30px;
     color: #4a4a4f;
+}
+
+.page6 .left_box_content3 p+p {
+    margin-top: 20px;
 }
 
 .page6 .right_box {
